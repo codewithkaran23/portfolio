@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">MyPortfolio</div>
+  <div class="menu-toggle">&#9776;</div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<section class="hero" id="home">
+  <div class="hero-container">
+    
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Karan Sharma</span></h1>
+      <h2>Full Stack Web Developer</h2>
+      <p>
+        I build modern, responsive, and scalable web applications
+        with clean UI and secure backend systems.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/profilephoto.jpeg" alt="Profile Photo">
+    </div>
+
+  </div>
+</section>
+
+<section class="about fade-in" id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a passionate web developer specializing in building modern,
+    responsive, and user-focused web applications. I have experience
+    developing e-commerce interfaces, fitness business websites,
+    and secure backend authentication systems.
+  </p>
+  <p>
+    I enjoy turning ideas into clean, functional digital experiences
+    using HTML, CSS, JavaScript, and backend technologies. My goal is
+    to continuously improve my skills and build scalable, real-world projects.
+  </p>
+</section>
+
+
+<section class="projects fade-in" id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="images/amazon.png" alt="E-commerce Website Screenshot">
+      <div class="project-content">
+        <h3>E-Commerce Frontend</h3>
+        <p>Amazon-inspired responsive e-commerce interface built with HTML & CSS.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/gym.png" alt="Gym Website Screenshot">
+      <div class="project-content">
+        <h3>Responsive Fitness Website</h3>
+        <p>Modern gym website built using HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/authapp.png" alt="AuthApp Screenshot">
+      <div class="project-content">
+        <h3>AuthApp – Authentication System</h3>
+        <p>Secure backend authentication system with login & registration.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+  <img src="images/portfolio.png" alt="Personal Portfolio Screenshot">
+  <div class="project-content">
+    <h3>Personal Portfolio Website</h3>
+    <p>
+      Modern responsive portfolio website built with HTML, CSS, and JavaScript,
+      featuring project filtering, animations, and clean UI design.
+    </p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<section class="contact fade-in" id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Your Name | All Rights Reserved
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
