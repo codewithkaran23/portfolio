@@ -171,6 +171,63 @@ section {
   line-height: 1.8;
 }
 
+/* ================= SKILLS ================= */
+.skills-section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.skills-title{
+  font-size:32px;
+  margin-bottom:50px;
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:25px;
+}
+
+/* Professional Card */
+.skill-card{
+  background:linear-gradient(145deg,#1c1c1c,#111);
+  border-radius:14px;
+  padding:30px 15px;
+  text-align:center;
+  transition:all 0.35s ease;
+  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+/* Icon */
+.skill-card img{
+  width:50px;
+  height:50px;
+  margin-bottom:10px;
+  transition:transform 0.3s;
+}
+
+/* Skill Name */
+.skill-card p{
+  font-size:14px;
+  letter-spacing:0.5px;
+}
+
+/* Hover Effects */
+.skill-card:hover{
+  transform:translateY(-8px) scale(1.04);
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+.skill-card:hover img{
+  transform:scale(1.15);
+}
+
+.github-icon{
+filter: invert(1);
+}
+
+
 /* ================= PROJECTS ================= */
 
 .project-grid {
@@ -314,5 +371,33 @@ footer {
   .hero-image img {
     width: 200px;
     height: 200px;
+  }
+}
+
+/* responsive buttons */
+@media (max-width: 768px) {
+  .btn, .btn-primary {
+    width: 100%;       /* full width */
+    font-size: 16px;   /* readable size */
+    padding: 12px 0;   /* bigger tap area */
+    margin-bottom: 12px; /* spacing */
+  }
+
+  .hero-text {
+    text-align: center; /* center text */
+    padding: 0 15px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    font-size: 24px;
+    cursor: pointer;
   }
 }
