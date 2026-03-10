@@ -6,6 +6,15 @@ toggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+// CLOSE MENU AFTER CLICKING LINK
+const navItems = document.querySelectorAll('.nav-links a');
+
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+
 // Fade-in Animation
 const faders = document.querySelectorAll('.fade-in');
 
