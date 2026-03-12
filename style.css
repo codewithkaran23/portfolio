@@ -50,6 +50,10 @@ text-decoration:none;
 cursor:pointer;
 }
 
+.logo:hover{
+text-decoration:none;
+}
+
 .nav-links{
 display:flex;
 gap:30px;
