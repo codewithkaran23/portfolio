@@ -263,6 +263,27 @@ color:var(--text-gray);
 font-size:0.95rem;
 }
 
+.project-links{
+margin-top:15px;
+display:flex;
+gap:10px;
+}
+
+.project-btn{
+padding:8px 16px;
+background:var(--primary);
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+.project-btn:hover{
+opacity:0.85;
+transform:translateY(-2px);
+}
+
 /* CONTACT */
 
 form{
