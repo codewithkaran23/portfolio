@@ -36,10 +36,18 @@ border-bottom:1px solid var(--border);
 z-index:1000;
 }
 
+/* .logo{
+font-weight:700;
+font-size:1.6rem;
+color:var(--primary);
+} */
+
 .logo{
 font-weight:700;
 font-size:1.6rem;
 color:var(--primary);
+text-decoration:none;
+cursor:pointer;
 }
 
 .nav-links{
