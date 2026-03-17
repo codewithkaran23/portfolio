@@ -35,10 +35,10 @@ faders.forEach(fader => {
 });
 
 // Contact Form (Demo)
-const form = document.getElementById('contactForm');
+// const form = document.getElementById('contactForm');
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert("Message sent successfully!");
-  form.reset();
-});
+// form.addEventListener('submit', function(e) {
+//   e.preventDefault();
+//   alert("Message sent successfully!");
+//   form.reset();
+// });

@@ -191,7 +191,7 @@
   </form>
 </section> -->
 
-<section class="contact fade-in" id="contact">
+<!-- <section class="contact fade-in" id="contact">
   <h2>Contact Me</h2>
 
   <form  id="contactForm" action="https://formspree.io/f/xlgpjejw" method="POST">
@@ -208,6 +208,29 @@
 
 </form>
 
+</section> -->
+
+<section class="contact fade-in" id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm" action="https://formspree.io/f/xlgpjejw" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <!-- IMPORTANT: FORCE REDIRECT MODE -->
+    <input type="hidden" name="_next" value="https://codewithkaran23.github.io/portfolio/thankyou.html">
+
+    <!-- THIS LINE FIXES POPUP ISSUE -->
+    <input type="hidden" name="_redirect" value="true">
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
 </section>
 
 <footer>
@@ -216,8 +239,9 @@
 
 <script>
 window.addEventListener("pageshow", function (event) {
-  if (event.persisted) {
-    document.getElementById("contactForm").reset();
+  const form = document.getElementById("contactForm");
+  if (event.persisted && form) {
+    form.reset();
   }
 });
 </script>
