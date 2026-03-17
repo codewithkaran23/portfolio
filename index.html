@@ -194,7 +194,7 @@
 <section class="contact fade-in" id="contact">
   <h2>Contact Me</h2>
 
-  <form action="https://formspree.io/f/xlgpjejw" method="POST">
+  <form  id="contactForm" action="https://formspree.io/f/xlgpjejw" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required>
 
@@ -214,8 +214,15 @@
   © 2026 Karan Sharma | All Rights Reserved
 </footer>
 
+<script>
+window.addEventListener("pageshow", function () {
+  document.getElementById("contactForm").reset();
+});
+</script>
+
 <!-- JS -->
 <script src="script.js"></script>
+
 
 </body>
 </html>
