@@ -337,6 +337,10 @@ background:#0d0d15;
   color: #00adb5;
 }
 
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
 /* MENU ICON */
 
 .menu-toggle{
