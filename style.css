@@ -213,10 +213,9 @@ SKILLS
 
 .skill-card:hover {
   transform: translateY(-6px);
+   box-shadow: 0 10px 25px rgba(124,92,255,0.4);
 }
-.skill-card img.github-icon {
-  filter: invert(1) brightness(2);
-}
+
 
 /* ======================
 PROJECTS
