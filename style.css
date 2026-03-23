@@ -214,6 +214,9 @@ SKILLS
 .skill-card:hover {
   transform: translateY(-6px);
 }
+.skill-card img.github-icon {
+  filter: invert(1) brightness(2);
+}
 
 /* ======================
 PROJECTS
