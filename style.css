@@ -322,6 +322,21 @@ color:var(--text-gray);
 background:#0d0d15;
 }
 
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00adb5;
+}
+
 /* MENU ICON */
 
 .menu-toggle{
